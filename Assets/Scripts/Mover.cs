@@ -7,7 +7,7 @@ public class Mover : MonoBehaviour, MyActions.IPlayerActions
     private MyActions m_Actions;
     private MyActions.PlayerActions m_Player;
     Vector2 inputVec2;
-
+    [SerializeField] float moveSpeed = 10f;
 
     void Awake()
     {
@@ -33,9 +33,9 @@ public class Mover : MonoBehaviour, MyActions.IPlayerActions
 
     void Update()
     {
-        float xValue = inputVec2.x;
+        float xValue = inputVec2.x * Time.deltaTime * moveSpeed;
         float yValue = 0f;
-        float zValue = inputVec2.y;
+        float zValue = inputVec2.y * Time.deltaTime * moveSpeed;
 
         transform.Translate(xValue, yValue, zValue);
     }
