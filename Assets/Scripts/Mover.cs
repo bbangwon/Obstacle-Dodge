@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering.Universal;
 
 public class Mover : MonoBehaviour, MyActions.IPlayerActions
 {
@@ -43,9 +42,9 @@ public class Mover : MonoBehaviour, MyActions.IPlayerActions
 
     void PrintInstruction()
     {
-        Debug.Log("°ÔÀÓ¿¡ ¿À½Å °ÍÀ» È¯¿µÇÕ´Ï´Ù!");
-        Debug.Log("WASD Å°³ª È­»ìÇ¥Å°·Î ¿òÁ÷ÀÌ¼¼¿ä!");
-        Debug.Log("¿ÀºêÁ§Æ®¿¡ ºÎµúÈ÷Áö ¸¶¼¼¿ä!");
+        Debug.Log("ê²Œì„ì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤!");
+        Debug.Log("WASD í‚¤ë‚˜ í™”ì‚´í‘œí‚¤ë¡œ ì›€ì§ì´ì„¸ìš”!");
+        Debug.Log("ì˜¤ë¸Œì íŠ¸ì— ë¶€ë”ªíˆì§€ ë§ˆì„¸ìš”!");
     }
 
     void MovePlayer()
@@ -57,7 +56,7 @@ public class Mover : MonoBehaviour, MyActions.IPlayerActions
         transform.Translate(xValue, yValue, zValue);
     }
 
-    #region ÀÎÇ² Äİ¹é ÇÔ¼öµé
+    #region ì¸í’‹ ì½œë°± í•¨ìˆ˜ë“¤
     public void OnAttack(InputAction.CallbackContext context)
     {
 
