@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    [SerializeField]
+    float timeToWait = 2f;    
     
     void Update()
     {
-        var time = Time.time;
-        Debug.Log("이 게임이 시작된 후 경과한 시간: " + time);
+        if(Time.time > timeToWait)
+        {
+            Debug.Log("아래를 조심하세요!");
+        }
     }
 }
