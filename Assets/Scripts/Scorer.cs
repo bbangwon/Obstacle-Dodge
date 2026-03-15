@@ -6,8 +6,10 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        hits++;
-        Debug.Log("이 물체에 이렇게 여러 번 부딪혔습니다: " + hits);
+        if (collision.gameObject.tag != "Hit")
+        {
+            hits++;
+            Debug.Log("이 물체에 이렇게 여러 번 부딪혔습니다: " + hits);
+        }
     }
-
 }

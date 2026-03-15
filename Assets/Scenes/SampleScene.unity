@@ -1133,9 +1133,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1142520635}
   - {fileID: 1037606908}
   - {fileID: 523908651}
-  - {fileID: 1142520635}
   - {fileID: 754107532}
   - {fileID: 357026830}
   - {fileID: 1661978299}
@@ -1286,7 +1286,7 @@ GameObject:
   - component: {fileID: 824019079}
   m_Layer: 0
   m_Name: Dodgy The Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1622,9 +1622,9 @@ GameObject:
   - component: {fileID: 1142520639}
   - component: {fileID: 1142520638}
   - component: {fileID: 1142520637}
-  - component: {fileID: 1142520636}
-  - component: {fileID: 1142520640}
   - component: {fileID: 1142520641}
+  - component: {fileID: 1142520640}
+  - component: {fileID: 1142520636}
   m_Layer: 0
   m_Name: Dropping Object
   m_TagString: Untagged
