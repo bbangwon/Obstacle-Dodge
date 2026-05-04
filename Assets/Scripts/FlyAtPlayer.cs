@@ -9,11 +9,25 @@ public class FlyAtPlayer : MonoBehaviour
 
     void Start()
     {
-        playerPosition = player.position;
+        playerPosition = player.position;        
     }
 
     void Update()
     {
+        MoveToPlayer();
+        DestroyWhenReached();
+    }
+
+    void MoveToPlayer()
+    {
         transform.position = Vector3.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
+    }
+
+    void DestroyWhenReached()
+    {
+        if (transform.position == playerPosition)
+        {
+            Destroy(gameObject);
+        }
     }
 }
