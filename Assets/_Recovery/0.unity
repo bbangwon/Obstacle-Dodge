@@ -404,7 +404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &140373542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,87 +637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97019f0d42ad5b6469f8064c3ec847d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectHit
---- !u!1 &236030326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 236030330}
-  - component: {fileID: 236030329}
-  - component: {fileID: 236030327}
-  - component: {fileID: 236030331}
-  m_Layer: 0
-  m_Name: Trigger Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &236030327
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236030326}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &236030329
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236030326}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &236030330
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236030326}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.66, y: 0.55, z: -4.67}
-  m_LocalScale: {x: 5.0807, y: 1.2246, z: 2.3394}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &236030331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236030326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 982b47b2e3dca4045ab146e2a21f3040, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerProjectile
-  projectiles:
-  - {fileID: 1433587936}
-  - {fileID: 1770909217}
-  - {fileID: 1149732721}
-  - {fileID: 140373541}
-  - {fileID: 486039192}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +725,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.26781824, y: 0, z: 0, w: 0.96346945}
-  m_LocalPosition: {x: 0, y: 7.78, z: -21.31}
+  m_LocalPosition: {x: 0, y: 7.78, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1159,7 +1078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &486039193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,7 +1257,7 @@ Transform:
   m_GameObject: {fileID: 510322615}
   serializedVersion: 2
   m_LocalRotation: {x: 0.26781824, y: 0, z: 0, w: 0.96346945}
-  m_LocalPosition: {x: 0, y: 7.78, z: -21.31}
+  m_LocalPosition: {x: 0, y: 7.78, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1855,7 +1774,7 @@ Transform:
   m_GameObject: {fileID: 824019072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55, z: -9.309999}
+  m_LocalPosition: {x: 0, y: 0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2273,7 +2192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1149732722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,7 +2319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1433587937
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2777,7 +2696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1770909218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,4 +2934,3 @@ SceneRoots:
   - {fileID: 1149732726}
   - {fileID: 140373546}
   - {fileID: 486039197}
-  - {fileID: 236030330}
